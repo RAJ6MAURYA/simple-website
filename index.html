@@ -10,8 +10,24 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
+      /* Animated gradient background */
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
     }
+
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
 
     header {
       background-color: #333;
@@ -21,11 +37,37 @@
 
     .navbar {
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #333;
+      color: white;
+      padding: 15px 20px;
+    }
+
+    .navbar-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-logo img {
+      width: 40px; /* Adjust as needed */
+      margin-right: 10px; /* Spacing between logo and text */
+    }
+
+    .navbar-logo h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .nav-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
     }
 
     .nav-links li {
-      display: inline;
       margin-right: 20px;
     }
 
@@ -33,7 +75,6 @@
       text-decoration: none;
       color: white;
     }
-
     .blog-content {
       max-width: 800px;
       margin: 20px auto;
@@ -87,6 +128,10 @@
 <!-- Header -->
 <header>
   <nav class="navbar">
+    <div class="navbar-logo">
+      <img src="https://media.glassdoor.com/sqll/2379163/synamedia-squarelogo-1557288422937.png" alt="Synamedia Logo">
+      <h1>Synamedia</h1>
+    </div>
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -106,7 +151,7 @@
   </section>
 
   <section class="blog-post">
-    <img src="https://th.bing.com/th/id/OIP.LupRT4ibNTpgo1OMn752qQHaE8?rs=1&pid=ImgDetMain" alt="Taj Mahal">
+    <img src="https://wallpaperaccess.com/full/1535931.jpg" alt="Taj Mahal">
     <h2>Ancient Civilizations</h2>
     <p>
       India's history boasts of ancient civilizations like the Indus Valley Civilization, which flourished around 3300–1300 BCE, showcasing advanced urban planning and sophisticated culture.
@@ -117,7 +162,7 @@
   </section>
 
   <section class="blog-post">
-    <img src="https://www.holidify.com/blog/wp-content/uploads/2015/07/13896645072_c994520879_k.jpg" alt="Indian Culture">
+    <img src="https://th.bing.com/th/id/R.e8a23f7537b0c00cd6bc16b7204c7261?rik=F96hW5oqDmSmvw&riu=http%3a%2f%2fimages.huffingtonpost.com%2f2016-07-11-1468262650-2976371-HumanRevolution.jpg&ehk=oydlHc9KJOvzQVFTsrncr7yN6%2fbDohRCoQpDvCyfQNk%3d&risl=&pid=ImgRaw&r=0" alt="Indian Culture">
     <h2>Cultural Influence</h2>
     <p>
       India's history is filled with cultural contributions in art, music, dance, and spirituality. The country's traditions continue to influence the world today.
@@ -128,7 +173,7 @@
   </section>
 
   <section class="blog-post">
-    <img src="https://th.bing.com/th/id/OIP.8QoBgdr99Wa7tlayCfqHQwHaE8?rs=1&pid=ImgDetMain" alt="Colonial Rule">
+    <img src="https://s3.ap-south-1.amazonaws.com/zoom-blog-image/2016/03/rameswaram-temple-history.jpg" alt="Colonial Rule">
     <h2>Colonial Era</h2>
     <p>
       The colonial period in India began with the arrival of European traders and eventually led to British rule, impacting India's social, economic, and political landscape.
